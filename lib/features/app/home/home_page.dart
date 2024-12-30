@@ -98,10 +98,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             color: appBarColor,
             iconSize: 28,
             onSelected: (value) {},
-
             itemBuilder: (context) => <PopupMenuEntry<String>>[
               PopupMenuItem<String>(
-                
                 value: "Settings",
                 child: GestureDetector(
                     onTap: () {
@@ -157,7 +155,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         );
       case 2:
         return FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, "callContactsPage");
+          },
           backgroundColor: tabColor,
           shape: const CircleBorder(),
           child: Center(

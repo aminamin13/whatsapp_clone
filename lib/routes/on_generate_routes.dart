@@ -3,6 +3,8 @@ import 'package:whatsapp__clone/features/app/const/page_const.dart';
 import 'package:whatsapp__clone/features/app/home/contacts_page.dart';
 import 'package:whatsapp__clone/features/app/home/home_page.dart';
 import 'package:whatsapp__clone/features/app/settings/settings_page.dart';
+import 'package:whatsapp__clone/features/call/presentation/pages/call_contacts_page.dart';
+import 'package:whatsapp__clone/features/chat/presentation/pages/single_chat_page.dart';
 import 'package:whatsapp__clone/features/status/presentation/pages/my_status_page.dart';
 import 'package:whatsapp__clone/features/user/presentation/pages/initial_profile_submit_page.dart';
 import 'package:whatsapp__clone/features/user/presentation/pages/login_page.dart';
@@ -38,18 +40,18 @@ class OnGenerateRoutes {
         {
           return materialPageBuilder(const SettingsPage());
         }
-      // case PageConst.callContactsPage:
-      //   {
-      //     return materialPageBuilder(const CallContactsPage());
-      //   }
+      case PageConst.callContactsPage:
+        {
+          return materialPageBuilder(const CallContactsPage());
+        }
       case PageConst.myStatusPage:
         {
           return materialPageBuilder(const MyStatusPage());
         }
-      // case PageConst.singleChatPage:
-      //   {
-      //     return materialPageBuilder(const SingleChatPage());
-      //   }
+      case PageConst.singleChatPage:
+        {
+          return materialPageBuilder(const SingleChatPage());
+        }
     }
     return null;
   }

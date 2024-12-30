@@ -12,6 +12,7 @@ class ChatPage extends StatelessWidget {
       itemCount: 3,
       itemBuilder: (context, index) {
         return ListTile(
+          onTap: () => Navigator.pushNamed(context, 'singleChatPage'),
           leading: SizedBox(
               width: 50,
               height: 50,
